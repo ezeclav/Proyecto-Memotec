@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 }
+
+/**********Fuente***************/
 @font-face {
   font-family: "Press Start 2P";
   font-style: normal;
@@ -13,6 +15,15 @@
     U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/********** Estilos para el cuerpo de la página ***************/
+
+body {
+  text-align: center;
+  background-image: url(./css/fondo.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vh;
+}
 .container {
   margin: 0;
   padding: 0;
@@ -20,13 +31,7 @@
   text-align: center;
 }
 
-/* Estilos para el cuerpo de la página */
-body {
-  background-color: #f0f0f0;
-  text-align: center;
-  background-image: url(fondo.jpg);
-}
-/*estiliza los campos que se van creando*/
+/**************estiliza los campos que se van creando*******************/
 #contenedor-campos {
   display: flex;
   flex-direction: column;
@@ -39,14 +44,14 @@ body {
 .containerHead {
   padding: 20px;
 }
-/*Estilo a H1*/
+
+/****************Estilo a H1******************/
 h1 {
   margin: 15px;
   padding: 1%;
   font-family: "Press Start 2P";
   background-color: yellow;
 }
-/*agregado de destellos a h1*/
 
 @keyframes animarLetras {
   0% {
@@ -64,8 +69,8 @@ h1 {
   display: inline-block;
   animation: animarLetras 6s infinite;
 }
-/*tamaño de header */
 
+/************************agregar estilo a h2**************************/
 header {
   margin-top: 20px;
 }
@@ -80,8 +85,6 @@ header h2 {
   border-radius: 5px;
 }
 
-/************************************************/
-/*agregar estilo a h2*/
 @keyframes destello {
   0% {
     opacity: 1;
@@ -139,13 +142,12 @@ button:focus {
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
   background-color: rgb(157, 255, 127);
 }
-/************************diseño pie de***********/
+/************************diseño pie de*********************/
 footer {
   background-color: #c6c7c7;
   color: black;
   font-size: 15px;
   position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
@@ -157,5 +159,3 @@ footer {
 #crearObjeto {
   margin: 20px;
 }
-
-/*animacion de botones*/
