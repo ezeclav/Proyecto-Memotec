@@ -15,7 +15,7 @@ function agregarCampos() {
     for (let i = 0; i < Number(numeroCampos); i++) {
       const input = document.createElement("input");
       input.type = "text";
-      input.placeholder = "Campo " + (i + 1);
+      input.placeholder = "Nombre Jugador " + (i + 1);
       contenedor.appendChild(input);
     }
   }
