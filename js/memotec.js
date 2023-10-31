@@ -3,15 +3,14 @@ const jugadores = {}; // Objeto para almacenar los jugadores
 document.getElementById("addGamers").addEventListener("click", agregarCampos);
 document.getElementById("crearObjeto").addEventListener("click", crearObjeto);
 
-function agregarCampos() {
-  const numeroCampos = prompt(
-    "Introduce la cantidad de jugadores que deseas agregar:"
-  );
+function agregarCampos(event) {
+  event.preventDefault(); // Evita que el formulario se envíe
+
+  const numeroCampos = document.getElementById("nombre").value;
 
   if (numeroCampos && !isNaN(numeroCampos)) {
     const contenedor = document.getElementById("contenedor-campos");
-    contenedor.innerHTML = ""; // Limpiar el contenido anterior
-    // Crea los sucesivos campos deacuerdo al numero ingresado
+    contenedor.innerHTML = "";
     for (let i = 0; i < Number(numeroCampos); i++) {
       const input = document.createElement("input");
       input.type = "text";
