@@ -11,7 +11,7 @@ function agregarCampos() {
   if (numeroCampos && !isNaN(numeroCampos)) {
     const contenedor = document.getElementById("contenedor-campos");
     contenedor.innerHTML = ""; // Limpiar el contenido anterior
-
+    // Crea los sucesivos campos deacuerdo al numero ingresado
     for (let i = 0; i < Number(numeroCampos); i++) {
       const input = document.createElement("input");
       input.type = "text";
