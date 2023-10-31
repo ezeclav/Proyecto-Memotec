@@ -27,4 +27,5 @@ function crearObjeto() {
     jugadores["Jugador " + (i + 1)] = inputs[i].value;
   }
   console.log(jugadores); // Muestra el objeto en la consola (puedes personalizar esto)
+  window.location.href = "about.html";
 }
