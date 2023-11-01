@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --violeta-fondo: #67118C; 
+  --violeta2: #8A188C;
+  --celeste-suave: #A8EBF5;
+}
+
 @font-face {
   font-family: "Press Start 2P";
   font-style: normal;
@@ -22,10 +29,12 @@
 
 /* Estilos para el cuerpo de la página */
 body {
-  background-color: #f0f0f0;
+  background-color: #000000;
   text-align: center;
-  background-image: url(fondo.jpg);
+  background-image: url(fondo2.jpg);
+  background-size: cover;
 }
+
 /*estiliza los campos que se van creando*/
 #contenedor-campos {
   display: flex;
@@ -39,13 +48,15 @@ body {
 .containerHead {
   padding: 20px;
 }
+
 /*Estilo a H1*/
 h1 {
   margin: 15px;
   padding: 1%;
   font-family: "Press Start 2P";
-  background-color: yellow;
+  background-color: rgb(0, 255, 140);
 }
+
 /*agregado de destellos a h1*/
 
 @keyframes animarLetras {
@@ -63,11 +74,13 @@ h1 {
 #brillo {
   display: inline-block;
   animation: animarLetras 6s infinite;
+  margin-top: 50px;
 }
+
 /*tamaño de header */
 
 header {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 header h2 {
@@ -75,13 +88,15 @@ header h2 {
   font-family: "Press Start 2P";
   text-decoration: double;
   background-color: yellow;
-  padding: 5px 1px;
-  margin: 4%;
+  padding: 15px;
+  margin-left: 100px;
+  margin-right: 100px;
   border-radius: 5px;
 }
 
 /************************************************/
 /*agregar estilo a h2*/
+
 @keyframes destello {
   0% {
     opacity: 1;
@@ -96,25 +111,45 @@ header h2 {
 
 #destello {
   animation: destello 5s infinite;
+  margin-bottom: 70px;
+  margin-top: 0;
 }
+
+
+/* Estilización de párrafo */
+
+div .containerCenter p {
+  font-family: "Press Start 2P";
+  padding: 1%;
+  margin-bottom: 10px;
+  color:#ffffff;
+}
+
+/* Estilos para la caja */
+
+#nombre {
+  box-shadow: 0 0 50px rgb(243, 190, 32);
+  border-style: double;
+  border-width: 4px;
+}
+
 
 /********************Estilos para el centro de la página*******************************/
 
 .containerCenter {
-  background-color: tra;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px;
+  margin: 50px;
+  box-shadow: 0 0 50px rgb(22, 159, 251);
 }
 
 /************************diseño de los botones************/
 
 button {
-  background-color: red;
+  background-color: #67118C;
   color: #ffffff;
   border: none;
-
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
@@ -134,11 +169,13 @@ button:active {
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
   background-color: rgb(248, 114, 114);
 }
+
 button:focus {
   transform: scale(0.95);
   box-shadow: 2px 2px 5px rgb(255, 255, 255);
-  background-color: rgb(157, 255, 127);
+  background-color: rgb(0, 255, 140);
 }
+
 /************************diseño pie de pagina***********/
 footer {
   background-color: #c6c7c7;
@@ -151,11 +188,176 @@ footer {
 
 /* Estilos para los botones en el centro */
 #addGamers {
-  margin: 20px;
+  margin: 40px;
 }
 
 #crearObjeto {
+  margin: 10px;
+}
+
+/* Emojis */
+
+div .emojis .em {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*animacion de emojis*/
+
+
+
+/*********************** Media Query para móvil ***********************/
+
+@media screen and (max-width: 799px) {
+  
+  /*estiliza los campos que se van creando*/
+  #contenedor-campos {
+    gap: 8px;
+  }
+  
+  /*Estilo a H1*/
+  h1 {
+  margin: 10px;
+}
+
+/*agregado de destellos a h1*/
+@keyframes animarLetras {
+  0% {
+    font-size: 5px;
+  }
+  50% {
+    font-size: 13px;
+  }
+  100% {
+    font-size: 5px;
+  }
+}
+
+header {
+  margin-top: 5px;
+}
+
+header h2 {
+  font-size: 13px;
+  padding: 5px 1px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+body {
+  overflow: auto;
+}
+
+.containerCenter {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Estilización de párrafo */
+
+div .containerCenter p {
+  font-family: "Press Start 2P";
+  font-size: small;
+  padding: 1%;
+  margin-bottom: 5px;
+  margin-top: 8px;
+  color:#ffffff;
+}
+
+.containerCenter {
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 40px rgb(22, 159, 251);
+}
+
+#brillo {
+  display: inline-block;
+  animation: animarLetras 6s infinite;
+  margin-top: 10px;
+}
+
+#destello {
+  animation: destello 5s infinite;
+  margin-bottom: 10px;
+}
+
+/************************diseño de los botones*********************/
+
+button {
+  background-color: #67118C;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  font-family: "Press Start 2P";
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Estilos para los botones en el centro */
+#addGamers {
   margin: 20px;
 }
 
-/*animacion de botones*/
+/************************diseño pie de pagina***********/
+footer {
+  background-color: #c6c7c7;
+  color: black;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.emojis {
+  display: inline;
+
+}
+
+#crearObjeto {
+  margin: 10px;
+}
+
+div .emojis .em {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+}
+
+/*********************** Media Query para tablet ***********************/
+
+@media screen and (max-width: 999px) {
+
+  #brillo {
+    margin-top: 20px;
+  }
+
+  header h2 {
+    font-size: 17px;
+    font-family: "Press Start 2P";
+    text-decoration: double;
+    background-color: yellow;
+    padding: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-radius: 5px;
+  }
+
+  #destello {
+    margin-bottom: 50px;
+  }
+
+  /* Estilos para los botones en el centro */
+  #addGamers {
+  margin: 20px;
+}
+
+}
+
