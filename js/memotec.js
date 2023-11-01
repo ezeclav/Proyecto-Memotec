@@ -1,3 +1,5 @@
+"use strict";
+
 const jugadores = {}; // Objeto para almacenar los jugadores
 
 document.getElementById("addGamers").addEventListener("click", agregarCampos);
@@ -27,4 +29,17 @@ function crearObjeto() {
   }
   console.log(jugadores); // Muestra el objeto en la consola (puedes personalizar esto)
   window.location.href = "about.html";
+}
+/******pone un etiqueta div y a este le agrega un elemento <audio> para poner un sonido de fondo****/
+document.addEventListener("click", playSound);
+function playSound() {
+  let element = document.createElement("div");
+  element.setAttribute("style", "display: none");
+  element.innerHTML = `
+    <audio autoplay loop>
+      <source src="./js/sonido2.mp3" type="audio/ogg">
+    </audio>
+  `;
+  document.body.appendChild(element);
+  document.removeEventListener("click", playSound);
 }
