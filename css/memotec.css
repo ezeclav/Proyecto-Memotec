@@ -338,11 +338,14 @@ div .emojis .em {
     font-size: 10px;
     position: fixed;
     bottom: 0;
+<<<<<<< HEAD
 =======
 /******diseño de los botones*******/
 >>>>>>> Fiorella
 
     height: 100vh;
+=======
+>>>>>>> 7e3e44d562d9ab426aa3efe36edbdb359a18961e
   }
 
   .emojis {
