@@ -4,12 +4,15 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 :root {
   --violeta-fondo: #67118c;
   --violeta2: #8a188c;
   --celeste-suave: #a8ebf5;
 }
 
+=======
+>>>>>>> Fiorella
 @font-face {
   font-family: "Press Start 2P";
   font-style: normal;
@@ -194,14 +197,39 @@ footer {
   margin: 10px;
 }
 
-/* Emojis */
+/* Emojis y su animacion */
 
 div .emojis .em {
   margin-left: 20px;
   margin-right: 20px;
+  animation: emojisAnimados 1s ease-in-out infinite;
 }
 
+<<<<<<< HEAD
 /*animacion de emojis*/
+=======
+@keyframes emojisAnimados {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-20deg);
+    }
+    40% {
+      transform: rotate(40deg);
+    }
+    60% {
+      transform: rotate(-20deg);
+    }
+    80% {
+      transform: rotate(40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+>>>>>>> Fiorella
 
 /*********************** Media Query para móvil ***********************/
 
@@ -302,6 +330,7 @@ div .emojis .em {
     margin: 20px;
   }
 
+<<<<<<< HEAD
   /************************diseño pie de pagina***********/
   footer {
     background-color: #c6c7c7;
@@ -309,6 +338,9 @@ div .emojis .em {
     font-size: 10px;
     position: fixed;
     bottom: 0;
+=======
+/******diseño de los botones*******/
+>>>>>>> Fiorella
 
     height: 100vh;
   }
@@ -317,9 +349,21 @@ div .emojis .em {
     display: inline;
   }
 
+<<<<<<< HEAD
   #crearObjeto {
     margin: 10px;
   }
+=======
+/*****diseño pie de pagina*****/
+footer {
+  background-color: #c6c7c7;
+  color: black;
+  font-size: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+>>>>>>> Fiorella
 
   div .emojis .em {
     margin-left: 20px;
