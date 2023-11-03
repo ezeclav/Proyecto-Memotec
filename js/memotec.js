@@ -27,10 +27,14 @@ function crearObjeto() {
   for (let i = 0; i < inputs.length; i++) {
     jugadores["Jugador " + (i + 1)] = inputs[i].value;
   }
-  console.log(jugadores); // Muestra el objeto en la consola (puedes personalizar esto)
-  window.location.href = "about.html";
+  console.log(jugadores);
+  window.location.href = "playGame.html"; // llama el HTML de gustavo
+
+  const miArray = jugadores; // guarda el arreglo en la variable
+  module.exports = miArray; // exporta el objeto a otro archivo JS
 }
 /******pone un etiqueta div y a este le agrega un elemento <audio> para poner un sonido de fondo****/
+
 document.addEventListener("click", playSound);
 function playSound() {
   let element = document.createElement("div");
