@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-:root {
-  --violeta-fondo: #67118C; 
-  --violeta2: #8A188C;
-  --celeste-suave: #A8EBF5;
-}
-
 @font-face {
   font-family: "Press Start 2P";
   font-style: normal;
@@ -195,15 +189,34 @@ footer {
   margin: 10px;
 }
 
-/* Emojis */
+/* Emojis y su animacion */
 
 div .emojis .em {
   margin-left: 20px;
   margin-right: 20px;
+  animation: emojisAnimados 1s ease-in-out infinite;
 }
 
-/*animacion de emojis*/
-
+@keyframes emojisAnimados {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(-20deg);
+    }
+    40% {
+      transform: rotate(40deg);
+    }
+    60% {
+      transform: rotate(-20deg);
+    }
+    80% {
+      transform: rotate(40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 
 
 /*********************** Media Query para móvil ***********************/
@@ -286,7 +299,7 @@ div .containerCenter p {
   margin-bottom: 10px;
 }
 
-/************************diseño de los botones*********************/
+/******diseño de los botones*******/
 
 button {
   background-color: #67118C;
@@ -306,7 +319,7 @@ button {
   margin: 20px;
 }
 
-/************************diseño pie de pagina***********/
+/*****diseño pie de pagina*****/
 footer {
   background-color: #c6c7c7;
   color: black;
