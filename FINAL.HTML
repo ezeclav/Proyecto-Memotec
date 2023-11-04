@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULTADO FINAL</title>
+  </head>
+  <body>
+    <div></div>
+    <button onclick="volver()">VOLVER AL JUEGO</button>
+    <p id="timer"></p>
+    <p id="moves"></p>
+    <script type="module">
+      async function volver() {
+        window.location.href = "/index.html";
+      }
+      window.volver = volver;
+      /////////////  CODIGO QUE TRAE LOS DATOS DEL LOCAL STORAGE    ///////////////////////////////////
+      const timerValue = localStorage.getItem("timer");
+      const movesValue = localStorage.getItem("moves");
+
+      // Muestra los valores en la página
+      const timerElement = document.getElementById("timer");
+      const movesElement = document.getElementById("moves");
+
+      timerElement.textContent = "Tiempo: " + timerValue;
+      movesElement.textContent = "Intentos: " + movesValue;
+
+      // LIMPIA EL LOCAL STORAGE
+      localStorage.removeItem("timer");
+      localStorage.removeItem("moves");
+    </script>
+  </body>
+</html>
