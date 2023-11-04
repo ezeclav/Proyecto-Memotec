@@ -1,9 +1,6 @@
 "use strict";
 
-const jugadores = {}; // Objeto para almacenar los jugadores
-
 document.getElementById("addGamers").addEventListener("click", agregarCampos);
-document.getElementById("crearObjeto").addEventListener("click", crearObjeto);
 
 function agregarCampos(event) {
   event.preventDefault(); // Evita que el formulario se envíe
@@ -22,18 +19,16 @@ function agregarCampos(event) {
   }
 }
 
-function crearObjeto() {
+function crearArreglo() {
   const inputs = document.querySelectorAll("#contenedor-campos input");
+  const jugadores = [];
   for (let i = 0; i < inputs.length; i++) {
-    jugadores["Jugador " + (i + 1)] = inputs[i].value;
+    jugadores.push(inputs[i].value);
   }
-  console.log(jugadores);
-  window.location.href = "playGame.html"; // llama el HTML de gustavo
-
-  const miArray = jugadores; // guarda el arreglo en la variable
-  module.exports = miArray; // exporta el objeto a otro archivo JS
+  return jugadores;
 }
-/******pone un etiqueta div y a este le agrega un elemento <audio> para poner un sonido de fondo****/
+
+/******funcion para agregar sonido****/
 
 document.addEventListener("click", playSound);
 function playSound() {
@@ -47,3 +42,10 @@ function playSound() {
   document.body.appendChild(element);
   document.removeEventListener("click", playSound);
 }
+
+/***llamo la funcion crear arreglo una vez se hace click en comenzar***/
+document.getElementById("crearArreglo").addEventListener("click", function () {
+  const gamer = crearArreglo();
+  console.log(gamer);
+  window.location.href = "playGame.html";
+});
