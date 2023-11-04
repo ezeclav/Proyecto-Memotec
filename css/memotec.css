@@ -32,7 +32,7 @@
 body {
   background-color: #000000;
   text-align: center;
-  background-image: url(fondo2.jpg);
+  background-image: url(/css/fondo2.jpg);
   background-size: cover;
 }
 

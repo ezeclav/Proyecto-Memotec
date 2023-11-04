@@ -21,7 +21,7 @@ header {
   padding-top: 0.5rem;
 }
 body {
-  background-image: url(/fondo3.jpg);
+  background-image: url(/css/fondo3.jpg);
   background-size: cover;
   backdrop-filter: blur(3px);
 }

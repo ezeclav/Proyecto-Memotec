@@ -6,10 +6,15 @@
     <title>RESULTADO FINAL</title>
   </head>
   <body>
-    <div></div>
-    <button onclick="volver()">VOLVER AL JUEGO</button>
-    <p id="timer"></p>
-    <p id="moves"></p>
+    <button class="volver" onclick="volver()">VOLVER AL JUEGO</button>
+    <h1>Felicidades, has terminado</h1>
+    <div>
+      <p id="timer"></p>
+    </div>
+    <div>
+      <p id="moves"></p>
+    </div>
+
     <script type="module">
       async function volver() {
         window.location.href = "/index.html";
