@@ -11,6 +11,7 @@ function reproducirAudio() {
 
     soundOk.oncanplaythrough = () => {
       soundOk.play();
+      soundOk.volume-=0.9;
       resolve("Reproducción de audio exitosa.");
     };
 
