@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --violeta-fondo: #67118c;
-  --violeta2: #8a188c;
-  --celeste-suave: #a8ebf5;
-}
-
 @font-face {
   font-family: "Press Start 2P";
   font-style: normal;
@@ -28,7 +22,10 @@
   text-align: center;
 }
 
-/* Estilos para el cuerpo de la página */
+/*************************************/
+/*ESTILOS PARA EL CUERPO DE LA PÁGINA
+/*************************************/
+
 body {
   background-color: #000000;
   text-align: center;
@@ -36,21 +33,18 @@ body {
   background-size: cover;
 }
 
-/*estiliza los campos que se van creando*/
-#contenedor-campos {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  border-radius: 10px;
-  padding: 2% 40% 2% 40%;
-}
+/****************************/
+/*ESTILOS PARA EL ENCABEZADO
+/****************************/
 
-/* Estilos para el encabezado */
 .containerHead {
   padding: 20px;
 }
 
-/*Estilo a H1*/
+/*************/
+/*ESTILO A H1
+/*************/
+
 h1 {
   margin: 15px;
   padding: 1%;
@@ -58,7 +52,9 @@ h1 {
   background-color: rgb(0, 255, 140);
 }
 
-/*agregado de destellos a h1*/
+/****************************/
+/*AGREGADO DE DESTELLOS A H1
+/****************************/
 
 @keyframes animarLetras {
   0% {
@@ -78,7 +74,9 @@ h1 {
   margin-top: 50px;
 }
 
-/*tamaño de header */
+/******************/
+/*TAMAÑO DE HEADER
+/******************/
 
 header {
   margin-top: 15px;
@@ -95,8 +93,9 @@ header h2 {
   border-radius: 5px;
 }
 
-/************************************************/
-/*agregar estilo a h2*/
+/*********************/
+/*AGREGAR ESTILO A H2
+/*********************/
 
 @keyframes destello {
   0% {
@@ -116,7 +115,9 @@ header h2 {
   margin-top: 0;
 }
 
-/* Estilización de párrafo */
+/*************************/
+/*ESTILIZACIÓN DE PÁRRAFO
+/*************************/
 
 div .containerCenter p {
   font-family: "Press Start 2P";
@@ -125,7 +126,9 @@ div .containerCenter p {
   color: #ffffff;
 }
 
-/* Estilos para la caja */
+/***********************/
+/*ESTILOS PARA LA CAJA
+/***********************/
 
 #nombre {
   box-shadow: 0 0 50px rgb(243, 190, 32);
@@ -133,7 +136,9 @@ div .containerCenter p {
   border-width: 4px;
 }
 
-/********************Estilos para el centro de la página*******************************/
+/*************************************/
+/*ESTILOS PARA EL CENTRO DE LA PÁGINA
+/*************************************/
 
 .containerCenter {
   background-color: transparent;
@@ -143,7 +148,9 @@ div .containerCenter p {
   box-shadow: 0 0 50px rgb(22, 159, 251);
 }
 
-/************************diseño de los botones************/
+/***********************/
+/*DISEÑO DE LOS BOTONES
+/***********************/
 
 button {
   background-color: #67118c;
@@ -175,7 +182,10 @@ button:active {
   background-color: rgb(248, 114, 114);
 }
 
-/************************diseño pie de pagina***********/
+/***********************/
+/*DISEÑO PIE DE PÁGINA
+/***********************/
+
 footer {
   background-color: #c6c7c7;
   color: black;
@@ -185,16 +195,17 @@ footer {
   width: 100%;
 }
 
-/* Estilos para los botones en el centro */
+/***************************************/
+/*ESTILOS PARA LOS BOTONES EN EL CENTRO
+/***************************************/
+
 #addGamers {
   margin: 40px;
 }
 
-#crearObjeto {
-  margin: 10px;
-}
-
-/* Emojis y su animacion */
+/***********************/
+/*EMOJIS Y SU ANIMACION
+/***********************/
 
 div .emojis .em {
   margin-left: 20px;
@@ -202,7 +213,9 @@ div .emojis .em {
   animation: emojisAnimados 1s ease-in-out infinite;
 }
 
-/*animacion de emojis*/
+/*********************/
+/*ANIMACION DE EMOJIS
+/*********************/
 
 @keyframes emojisAnimados {
   0% {
@@ -225,20 +238,17 @@ div .emojis .em {
   }
 }
 
-/*********************** Media Query para móvil ***********************/
+/*****************************************************************************************************************************/
+/***********                                          MEDIA QUERY PARA MÓVIL                                      ************/
+/*****************************************************************************************************************************/
+
 
 @media screen and (max-width: 799px) {
-  /*estiliza los campos que se van creando*/
-  #contenedor-campos {
-    gap: 8px;
-  }
 
-  /*Estilo a H1*/
   h1 {
     margin: 10px;
   }
 
-  /*agregado de destellos a h1*/
   @keyframes animarLetras {
     0% {
       font-size: 5px;
@@ -266,22 +276,12 @@ div .emojis .em {
     overflow: auto;
   }
 
-  .containerCenter {
-    background-color: transparent;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    margin: 10px;
-  }
-
-  /* Estilización de párrafo */
-
   div .containerCenter p {
     font-family: "Press Start 2P";
     font-size: small;
     padding: 1%;
     margin-bottom: 5px;
-    margin-top: 8px;
+    margin-top: 11px;
     color: #ffffff;
   }
 
@@ -304,52 +304,24 @@ div .emojis .em {
     margin-bottom: 10px;
   }
 
-  /************************diseño de los botones*********************/
-
   button {
-    background-color: #67118c;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
     font-size: 10px;
-    font-family: "Press Start 2P";
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s, box-shadow 0.2s;
   }
 
-  /* Estilos para los botones en el centro */
   #addGamers {
     margin: 20px;
-  }
-
-  /************************diseño pie de pagina***********/
-  footer {
-    background-color: #c6c7c7;
-    color: black;
-    font-size: 10px;
-    position: fixed;
-    bottom: 0;
-    height: 100vh;
   }
 
   .emojis {
     display: inline;
   }
-
-  #crearObjeto {
-    margin: 10px;
-  }
-
-  /*****diseño pie de pagina*****/
+  
   footer {
-    background-color: #c6c7c7;
-    color: black;
     font-size: 10px;
-    position: fixed;
     bottom: 0;
-    width: 100%;
+    height: 2.5vh;
   }
 
   div .emojis .em {
@@ -358,7 +330,9 @@ div .emojis .em {
   }
 }
 
-/*********************** Media Query para tablet ***********************/
+/*****************************************************************************************************************************/
+/***********                                         MEDIA QUERY PARA TABLET                                      ************/
+/*****************************************************************************************************************************/
 
 @media screen and (max-width: 999px) {
   #brillo {
@@ -367,21 +341,16 @@ div .emojis .em {
 
   header h2 {
     font-size: 17px;
-    font-family: "Press Start 2P";
-    text-decoration: double;
-    background-color: yellow;
-    padding: 15px;
     margin-left: 60px;
     margin-right: 60px;
-    border-radius: 5px;
   }
 
   #destello {
     margin-bottom: 50px;
   }
 
-  /* Estilos para los botones en el centro */
   #addGamers {
     margin: 20px;
   }
+
 }

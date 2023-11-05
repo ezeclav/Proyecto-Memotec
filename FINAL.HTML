@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/final.css">
     <title>RESULTADO FINAL</title>
   </head>
   <body>
-    <button class="volver" onclick="volver()">VOLVER AL JUEGO</button>
     <h1>Felicidades, has terminado</h1>
     <div>
       <p id="timer"></p>
@@ -14,13 +14,14 @@
     <div>
       <p id="moves"></p>
     </div>
+    <button class="volver" onclick="volver()">VOLVER AL JUEGO</button>
 
     <script type="module">
       async function volver() {
         window.location.href = "/index.html";
       }
       window.volver = volver;
-      /////////////  CODIGO QUE TRAE LOS DATOS DEL LOCAL STORAGE    ///////////////////////////////////
+      /////////////  CODIGO QUE TRAE LOS DATOS DEL LOCAL STORAGE    ///////////////////
       const timerValue = localStorage.getItem("timer");
       const movesValue = localStorage.getItem("moves");
 
