@@ -377,5 +377,5 @@ window.volver = volver;
  * para dirigirse a la pagina final
 /*******************************************/
 function final() {
-  window.location.href = "/final.html";
+  window.location.href = "/FINAL.html";
 }
