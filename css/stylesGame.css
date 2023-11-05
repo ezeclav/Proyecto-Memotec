@@ -221,9 +221,14 @@ li {
     height: 120px;
     /* margin: 0.3em; */
   }
+  .hide-start-btn {
+    width: 0px;
+  }
 
-  .controls {
-    width: 500px;
+  .moji {
+    font-size: 4rem;
+    line-height: 1.7;
+    text-align: center;
   }
 }
 
@@ -233,8 +238,10 @@ li {
     height: 100px;
   }
 
-  .controls {
-    width: 500px;
+  .moji {
+    font-size: 3rem;
+    line-height: 1.8;
+    text-align: center;
   }
 }
 
@@ -242,9 +249,5 @@ li {
   .card {
     width: 90px;
     height: 90px;
-  }
-
-  .controls {
-    width: 400px;
   }
 }
