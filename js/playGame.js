@@ -11,7 +11,7 @@ function reproducirAudio() {
 
     soundOk.oncanplaythrough = () => {
       soundOk.play();
-      soundOk.volume-=0.9;
+      soundOk.volume -= 0.9;
       resolve("Reproducción de audio exitosa.");
     };
 
@@ -316,12 +316,12 @@ function enableClick(el) {
 }
 
 function updateUI() {
-  movesContainer.textContent = "Intentos: " + moves;
+  movesContainer.textContent = +moves;
 }
 
 function resetUI() {
   timerContainer.textContent = "0 Min 0 Seg";
-  movesContainer.textContent = "Intentos: " + moves;
+  movesContainer.textContent = +moves;
 }
 
 // función para restablecer las variables que contienen un puntero a un elemento DOM
