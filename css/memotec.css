@@ -242,8 +242,9 @@ div .emojis .em {
 /***********                                          MEDIA QUERY PARA MÓVIL                                      ************/
 /*****************************************************************************************************************************/
 
+/* HORIZONTAL */
 
-@media screen and (max-width: 799px) {
+@media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
 
   h1 {
     margin: 10px;
@@ -330,11 +331,57 @@ div .emojis .em {
   }
 }
 
+/***** VERTICAL ****/
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+
+  @keyframes animarLetras {
+    0% {
+      font-size: 5px;
+    }
+    50% {
+      font-size: 7px;
+    }
+    100% {
+      font-size: 5px;
+    }
+  }
+
+  .containerCenter {
+    padding: 40px;
+    margin: 20px;
+  }
+
+  div .emojis .em {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+  }
+
+
 /*****************************************************************************************************************************/
 /***********                                         MEDIA QUERY PARA TABLET                                      ************/
 /*****************************************************************************************************************************/
 
-@media screen and (max-width: 999px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  @keyframes animarLetras {
+    0% {
+      font-size: 7px;
+    }
+    50% {
+      font-size: 15px;
+    }
+    100% {
+      font-size: 7px;
+    }
+  }
+  
   #brillo {
     margin-top: 20px;
   }
