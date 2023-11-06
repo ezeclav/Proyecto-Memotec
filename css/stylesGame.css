@@ -33,10 +33,10 @@ li {
   opacity: 0;
 }
 .game-start-btn {
-  background-color: #cf92e9;
-  color: #ffffff;
+  background-color: #0026fc;
+  color: rgb(251, 255, 0);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
@@ -46,10 +46,10 @@ li {
 }
 .game-return-btn,
 .replay {
-  background-color: #a119db;
-  color: #ffffff;
+  background-color: #0026fc;
+  color: rgb(251, 255, 0);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   cursor: pointer;
   font-size: 13px;
@@ -91,6 +91,7 @@ li {
 }
 
 .game-container {
+  padding: 40px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -104,13 +105,13 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 00px;
   min-height: 600px;
 }
 .pointer {
   margin: 10vh 18vh 0;
   font-size: 0.9rem;
-  color: rgb(238, 208, 109);
+  color: rgb(17, 255, 0);
 }
 .card {
   list-style: none;
@@ -227,7 +228,7 @@ li {
     padding: 0;
   }
   .game-start-btn {
-    font-size: 7px;
+    font-size: 10px;
     padding: 0;
   }
   .replay {
@@ -236,13 +237,13 @@ li {
   }
   .pointer {
     font-size: 10px;
-    padding: 0;
+    padding: 0px;
     color: rgb(17, 255, 0);
   }
   .card {
     list-style: none;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 0.5em;
     display: flex;
     justify-content: center;
@@ -274,9 +275,17 @@ li {
     min-height: 300px;
   }
   .moji {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
     text-align: center;
+  }
+  .game-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 }
 /***** VERTICAL ****/
@@ -299,10 +308,11 @@ li {
     padding: 0;
     color: rgb(17, 255, 0);
   }
+
   .card {
     list-style: none;
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin: 0.5em;
     display: flex;
     justify-content: center;
@@ -331,11 +341,19 @@ li {
     justify-content: center;
     align-items: center;
     max-width: 350px;
-    min-height: 300px;
+    min-height: 250px;
   }
   .moji {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
     text-align: center;
+  }
+  .game-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
   }
 }
