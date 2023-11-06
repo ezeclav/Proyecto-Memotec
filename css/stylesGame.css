@@ -39,7 +39,7 @@ li {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -52,7 +52,7 @@ li {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 20px;
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -223,15 +223,15 @@ li {
 
 @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
   .game-return-btn {
-    font-size: 7px;
+    font-size: 16px;
     padding: 0;
   }
   .game-start-btn {
-    font-size: 7px;
+    font-size: 16px;
     padding: 0;
   }
   .replay {
-    font-size: 7px;
+    font-size: 16px;
     padding: 0;
   }
   .pointer {
@@ -283,15 +283,15 @@ li {
 
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   .game-return-btn {
-    font-size: 7px;
+    font-size: 16px;
     padding: 0;
   }
   .game-start-btn {
-    font-size: 6px;
+    font-size: 16px;
     padding: 0;
   }
   .replay {
-    font-size: 6px;
+    font-size: px;
     padding: 0;
   }
   .pointer {
