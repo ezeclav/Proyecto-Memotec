@@ -33,13 +33,13 @@ li {
   opacity: 0;
 }
 .game-start-btn {
-  background-color: #cf92e9;
-  color: #ffffff;
+  background-color: #0026fc;
+  color: rgb(251, 255, 0);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -62,13 +62,17 @@ li {
 
 .game-return-btn,
 .replay {
-  background-color: #a119db;
-  color: #ffffff;
+  background-color: #0026fc;
+  color: rgb(251, 255, 0);
   border: none;
-  padding: 10px 20px;
+  padding: 10px 60px;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< HEAD
   font-size: 15px;
+=======
+  font-size: 13px;
+>>>>>>> 6b70d25b7152577a5094f9f59244731ab23a6630
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
@@ -109,6 +113,7 @@ li {
 }
 
 .game-container {
+  padding: 40px;
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -122,14 +127,14 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  max-width: 00px;
   min-height: 600px;
 }
 
 .pointer {
   margin: 10vh 18vh 0;
   font-size: 0.9rem;
-  color: rgb(238, 208, 109);
+  color: rgb(17, 255, 0);
 }
 .card {
   list-style: none;
@@ -257,13 +262,20 @@ li {
 /* HORIZONTAL */
 
 @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
+<<<<<<< HEAD
   .game-return-btn, .replay {
     font-size: 10px;
     padding: 7px;
     margin-top: 15px;
+=======
+  .game-return-btn {
+    font-size: 7px;
+    padding: 0;
+>>>>>>> 6b70d25b7152577a5094f9f59244731ab23a6630
   }
 
   .game-start-btn {
+<<<<<<< HEAD
     font-size: 11px;
     padding: 10px;
     animation: comenzarConBrillo 4s linear infinite;
@@ -279,18 +291,26 @@ li {
     100% {
       box-shadow: 0 0 120px #ff0000, 0 0 20px #ffea00, 0 0 30px #1e00ff;
     }
+=======
+    font-size: 10px;
+    padding: 0;
+  }
+  .replay {
+    font-size: 7px;
+    padding: 0;
+>>>>>>> 6b70d25b7152577a5094f9f59244731ab23a6630
   }
 
   .pointer {
     font-size: 10px;
-    padding: 0;
+    padding: 0px;
     color: rgb(17, 255, 0);
   }
 
   .card {
     list-style: none;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     margin: 0.5em;
     display: flex;
     justify-content: center;
@@ -322,10 +342,11 @@ li {
     min-height: 300px;
   }
   .moji {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
     text-align: center;
   }
+<<<<<<< HEAD
 
   .tiempo, .timer {
     border: 1.5px black solid;
@@ -343,6 +364,18 @@ li {
 
   }
 }
+=======
+  .game-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+/***** VERTICAL ****/
+>>>>>>> 6b70d25b7152577a5094f9f59244731ab23a6630
 
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   .game-return-btn {
@@ -366,10 +399,11 @@ li {
     color: rgb(17, 255, 0);
     margin-top: 35px;
   }
+
   .card {
     list-style: none;
-    width: 65px;
-    height: 65px;
+    width: 50px;
+    height: 50px;
     margin: 0.5em;
     display: flex;
     justify-content: center;
@@ -397,14 +431,15 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 345px;
-    min-height: 345px;
+    max-width: 350px;
+    min-height: 250px;
   }
   .moji {
-    font-size: 3rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
     text-align: center;
   }
+<<<<<<< HEAD
 
   .tiempo, .timer {
     border: 1.5px black solid;
@@ -447,3 +482,14 @@ li {
     margin-top: 15px;
   }
 }
+=======
+  .game-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+}
+>>>>>>> 6b70d25b7152577a5094f9f59244731ab23a6630
