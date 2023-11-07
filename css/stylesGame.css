@@ -23,7 +23,7 @@ header {
 body {
   background-image: url(/css/fondo3.jpg);
   background-size: cover;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(5px);
 }
 li {
   list-style: none;
@@ -43,7 +43,23 @@ li {
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  animation: comenzarConBrillo 4s linear infinite;
 }
+
+@keyframes comenzarConBrillo {
+  20% {
+    box-shadow: 0 0 20px #ff0000, 0 0 20px #ffea00, 0 0 30px #2600ff;
+  }
+  50% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 120px #ff0000, 0 0 20px #ffea00, 0 0 30px #1e00ff;
+  }
+}
+
 .game-return-btn,
 .replay {
   background-color: #a119db;
@@ -52,10 +68,12 @@ li {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   font-family: "Press Start 2P";
   box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 25px;
+  margin-right: 25px;
   /* color: rgb(0, 0, 163);
   width: 150px;
   border: 1px solid #e4d9ff;
@@ -107,6 +125,7 @@ li {
   max-width: 600px;
   min-height: 600px;
 }
+
 .pointer {
   margin: 10vh 18vh 0;
   font-size: 0.9rem;
@@ -214,7 +233,23 @@ li {
     transform: scaleX(1) scaleY(1);
   }
 }
-/* resposivness */
+
+.tiempo, .timer {
+  border: 2px black solid;
+  color: antiquewhite;
+  padding: 7px;
+  box-shadow: 0 0 50px rgb(26, 251, 22);
+}
+
+.moves-selector{
+  border: 1.5px black solid;
+  color: antiquewhite;
+  padding: 5px;
+  box-shadow: 0 0 50px rgb(26, 251, 22);
+  margin-bottom: 20px;
+
+}
+
 /*****************************************************************************************************************************/
 /***********                                          MEDIA QUERY PARA MÓVIL                                      ************/
 /*****************************************************************************************************************************/
@@ -222,23 +257,36 @@ li {
 /* HORIZONTAL */
 
 @media screen and (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
-  .game-return-btn {
-    font-size: 16px;
-    padding: 0;
+  .game-return-btn, .replay {
+    font-size: 10px;
+    padding: 7px;
+    margin-top: 15px;
   }
+
   .game-start-btn {
-    font-size: 16px;
-    padding: 0;
+    font-size: 11px;
+    padding: 10px;
+    animation: comenzarConBrillo 4s linear infinite;
   }
-  .replay {
-    font-size: 16px;
-    padding: 0;
+
+  @keyframes comenzarConBrillo {
+    20% {
+      box-shadow: 0 0 20px #ff0000, 0 0 20px #ffea00, 0 0 30px #2600ff;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 120px #ff0000, 0 0 20px #ffea00, 0 0 30px #1e00ff;
+    }
   }
+
   .pointer {
     font-size: 10px;
     padding: 0;
     color: rgb(17, 255, 0);
   }
+
   .card {
     list-style: none;
     width: 70px;
@@ -278,24 +326,45 @@ li {
     line-height: 1.2;
     text-align: center;
   }
+
+  .tiempo, .timer {
+    border: 1.5px black solid;
+    color: antiquewhite;
+    padding: 5px;
+    box-shadow: 0 0 50px rgb(26, 251, 22)
+  }
+
+  .moves-selector{
+    border: 1.5px black solid;
+    color: antiquewhite;
+    padding: 5px;
+    box-shadow: 0 0 50px rgb(26, 251, 22);
+    margin-bottom: 20px;
+
+  }
 }
+
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
   .game-return-btn {
     font-size: 7px;
     padding: 0;
+    margin: 0;
   }
   .game-start-btn {
     font-size: 6px;
     padding: 0;
+    margin: 0;
   }
   .replay {
     font-size: 6px;
     padding: 0;
+    margin: 0;
   }
   .pointer {
-    font-size: 8px;
+    font-size: 12px;
     padding: 0;
     color: rgb(17, 255, 0);
+    margin-top: 35px;
   }
   .card {
     list-style: none;
@@ -335,5 +404,46 @@ li {
     font-size: 3rem;
     line-height: 1.2;
     text-align: center;
+  }
+
+  .tiempo, .timer {
+    border: 1.5px black solid;
+    color: antiquewhite;
+    padding: 5px;
+    box-shadow: 0 0 50px rgb(26, 251, 22)
+  }
+
+  .moves-selector{
+    border: 1.5px black solid;
+    color: antiquewhite;
+    padding: 5px;
+    box-shadow: 0 0 50px rgb(26, 251, 22);
+    margin-bottom: 20px;
+
+  }
+
+  .game-start-btn {
+    padding: 8px;
+    font-size: 8px;
+    animation: comenzarConBrillo 4s linear infinite;
+  }
+
+  @keyframes comenzarConBrillo {
+    20% {
+      box-shadow: 0 0 20px #ff0000, 0 0 20px #ffea00, 0 0 30px #2600ff;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 120px #ff0000, 0 0 20px #ffea00, 0 0 30px #1e00ff;
+    }
+  }
+
+  .game-return-btn,
+  .replay {
+    padding: 7px;
+    font-size: 6.5px;
+    margin-top: 15px;
   }
 }
